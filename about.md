@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+sidebar: true
 permalink: /about/
 ---
 
