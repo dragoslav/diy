@@ -1,7 +1,8 @@
 ---
-layout: project
+layout: page
 title: Project 1
 sidebar: 1
+label: enhancement
 permalink: /project1/
 ---
 

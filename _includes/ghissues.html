@@ -1,0 +1,23 @@
+{% if site.ghuser and site.ghrepo and page.label %}
+<div id="gh-issues">
+    <script src="/js/jquery/dist/jquery.min.js"></script>
+    <script src="/js/underscore/underscore-min.js"></script>
+
+    <script type="text/javascript">
+    $(function() {
+      $.ajax({
+        type: "GET",
+        url: "https://api.github.com/repos/{{ site.ghuser }}/{{ site.ghrepo }}/issues?labels={{ page.label }}",
+        cache: false
+      })
+      .done(function(issues) {
+        _.each(issues, function(issue) {
+          console.log("title   : " + issue.title);
+          console.log("url     : " + issue.url);
+          console.log("comments: " + issue.comments);
+        });
+      });
+    });
+    </script>
+</div>
+{% endif %}

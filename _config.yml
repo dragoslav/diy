@@ -47,6 +47,10 @@ url:
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
+# GitHub user & repo for the issue list
+ghuser: "dragoslav"
+ghrepo: "diy-bio"
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #
