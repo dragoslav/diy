@@ -1,0 +1,92 @@
+{% if site.footer-links.github and page.label %}
+
+<script type="text/template" id='issue-title-template'>
+  <h3 class="issues">
+    <a href="<%= url %>">Ideas, Improvements & Issues</a>
+  </h3>
+</script>
+
+<script type="text/template" id='issue-table-template'>
+    <div id="issue-table" class="issue-table">
+    </div>
+</script>
+
+<script type="text/template" id='issue-row-template'>
+    <div class="issue-row clickable-row" data-href='<%= issue.html_url %>'>
+        <div class="issue-title issues">
+            <span class="octicon octicon-light-bulb"></span> <%= issue.title %>
+        </div>
+        <div class="issue-comment issues">
+            <span class="octicon octicon-comment"></span> <%= issue.comments %>
+        </div>
+    </div>
+</script>
+
+<div id="issues"></div>
+
+<script src="/components/jquery/dist/jquery.min.js"></script>
+<script src="/components/underscore/underscore-min.js"></script>
+
+<script type="text/javascript">
+$(function() {
+  $.ajax({
+    type: "GET",
+    url: "https://api.github.com/repos/{{ site.footer-links.github }}/issues?labels={{ page.label }}",
+    cache: false
+  })
+  .done(function(issues) {
+    if(issues.length > 0) {
+      var title = _.template($("#issue-title-template").html());
+      $("#issues").html(title({url: "https://github.com/{{ site.footer-links.github }}/labels/{{ page.label }}"}));
+
+      var table = _.template($("#issue-table-template").html());
+      $("#issues").append(table({}));
+
+      _.each(issues, function(issue) {
+        var row = _.template($("#issue-row-template").html());
+        $("#issue-table").append(row({issue: issue}));
+      });
+    }
+  });
+
+  $("#issues").on("click", ".clickable-row", function () {
+    window.document.location = $(this).data("href");
+  });
+});
+
+</script>
+
+<style type="text/css">
+    .issues a {
+        color: #313131 !important;
+    }
+    .issue-table {
+        display: table;
+        width: 100%;
+        font-size: 15px;
+    }
+    .issue-row {
+        display: table-row;
+        height: 32px;
+    }
+    .issue-row:hover {
+        background-color: #efefef;
+        cursor: pointer;
+        cursor: hand;
+    }
+    .issue-title {
+        display: table-cell;
+        text-align: left;
+        padding-left: 5px;
+        vertical-align: middle;
+    }
+    .issue-comment {
+        display: table-cell;
+        padding-right: 5px;
+        text-align: right;
+        width: 60px;
+        vertical-align: middle;
+    }
+</style>
+
+{% endif %}

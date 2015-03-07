@@ -21,7 +21,7 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: dragoslav/diy-bio
   instagram:
   linkedin:
   pinterest:
@@ -46,10 +46,6 @@ url:
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
-
-# GitHub user & repo for the issue list
-ghuser: "dragoslav"
-ghrepo: "diy-bio"
 
 #
 # !! You don't need to change any of the configuration flags below !!
