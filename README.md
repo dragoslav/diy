@@ -8,8 +8,8 @@ Site generation is based on [Jekyll Now](https://github.com/jekyll/jekyll) and t
 
 2 branches:
 
-  - **master** documentation & blog - full content.
-  - **clean** Jekyll Now + theme + additional features with minimal examples. Suitable for starting a new documentation & blog site.
+  - **master** Jekyll Now + theme + additional features with minimal examples. Suitable for starting a new documentation & blog web site.
+  - **gh-pages** personal documentation & blog - hosted on GitHub ([DIY](http://dragoslav.github.io/diy/)). More info about the setup [Project Pages](https://help.github.com/articles/user-organization-and-project-pages/#project-pages)
   
 ### Additional features & changes
 
