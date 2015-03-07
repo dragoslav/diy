@@ -1,6 +1,6 @@
-# DIY Bio 
+# DIY
 
-**DIY Bio** is a personal project documentation and blog web site.
+**DIY** is a personal Do-It-Yourself project documentation and blog web site.
 
 Site generation is based on [Jekyll Now](https://github.com/jekyll/jekyll) and the main theme on [Lanyon](http://lanyon.getpoole.com).
 
