@@ -16,7 +16,7 @@
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
-  <body  class="sidebar-overlay">
+  <body class="theme-base-0b">
 
     {% include sidebar.html %}
 
@@ -40,21 +40,21 @@
           </header>
         </div>
       </div>
-    </div>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
+      <div id="main" role="main" class="container">
+          {{ content }}
+      </div>
+
+      <div class="wrapper-footer">
+          <div class="container">
+              <footer class="footer">
+                  {% include svg-icons.html %}
+              </footer>
+          </div>
+      </div>
     </div>
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
 
     {% include analytics.html %}
   </body>
