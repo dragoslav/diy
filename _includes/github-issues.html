@@ -1,9 +1,9 @@
 {% if site.footer-links.github and page.label %}
 
 <script type="text/template" id='issue-title-template'>
-  <h3 class="issues">
+  <h2 class="issues">
     <a href="<%= url %>">Ideas, Improvements & Issues</a>
-  </h3>
+  </h2>
 </script>
 
 <script type="text/template" id='issue-table-template'>
@@ -14,7 +14,7 @@
 <script type="text/template" id='issue-row-template'>
     <div class="issue-row clickable-row" data-href='<%= issue.html_url %>'>
         <div class="issue-title issues">
-            <span class="octicon octicon-light-bulb"></span> <%= issue.title %>
+            <span class="octicon octicon-tools"></span> <%= issue.title %>
         </div>
         <div class="issue-comment issues">
             <span class="octicon octicon-comment"></span> <%= issue.comments %>
@@ -63,7 +63,6 @@ $(function() {
     .issue-table {
         display: table;
         width: 100%;
-        font-size: 15px;
     }
     .issue-row {
         display: table-row;
