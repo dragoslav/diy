@@ -4,6 +4,7 @@ title: Incubator
 sidebar: 1
 label: incubator
 permalink: /incubator/
+work-in-progress: true
 ---
 
 [In biology, an incubator is a device used to grow and maintain microbiological cultures or cell cultures.](http://en.wikipedia.org/wiki/Incubator_%28culture%29)
