@@ -27,9 +27,9 @@ Main differences:
 
 ## Design
 
-* For incubator box (casing) the following [Magic Box template](http://dragoslav.github.io/diy/projects/01-incubator/magic_box_template.mbt) is used. 
-  The template can be edited using [Magic Box tool](http://magic-box.org/tool/).
+* For incubator box (casing) the following Magic Box [template](http://dragoslav.github.io/diy/projects/01-incubator/magic_box_template.mbt) is used.
   It is a modified version of [Press-fit Box](http://magic-box.org/c/designs/). The main difference is that one side can be configured differently: number of steps (t_steps) and fitting (tpf). 
   That allows 5 sides to strongly fit together and the remaining (top) side just to be used as a cover.
-  Sample [SVG laser cut file](http://dragoslav.github.io/diy/projects/01-incubator/magic_box_design.svg).
+  SVG files can be generated using the template and online Magic Box [tool](http://magic-box.org/tool/).
+  An example of SVG laser cut [file](http://dragoslav.github.io/diy/projects/01-incubator/magic_box_design.svg).
 
