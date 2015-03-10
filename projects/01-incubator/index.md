@@ -25,5 +25,10 @@ Main differences:
 |MOSFET|[Conrad](https://www.conrad.nl/nl/mosfet-fairchild-semiconductor-buz-11-n-kanaal-soort-behuizing-to-220-ab-i-d-30-a-u-ds-50-v-151334.html)|€ 1.01|
 |Heating foil|[Conrad](http://www.conrad.com/ce/en/product/189177/?insert=62&insertNoDeeplink&productname=Thermo-90-mm-Operating-voltage-12-V-Power-15-W)| € 5.49|
 
+## Design
 
+* For incubator box (casing) the following [Magic Box template](http://magic-box.org/tool/?url=http://dragoslav.github.io/diy/projects/01-incubator/magic_box_template.mbt&state=viewer) is used. 
+  It is a modified version of [Press-fit Box](http://magic-box.org/c/designs/). The main difference is that one side can be configured differently: number of steps (t_steps) and fitting (tpf). 
+  That allows 5 sides to strongly fit together and the remaining (top) side just to be used as a cover.
+  Sample [SVG laser cut file](http://dragoslav.github.io/diy/projects/01-incubator/magic_box_design.svg).
 
