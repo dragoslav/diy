@@ -12,7 +12,7 @@ Design of the following incubator is based on one from [Biohack Academy](http://
 
 Main differences:
 
-* Instead of Arduino microcontroller, it will be controlled by Raspberry Pi 2
+* Instead of Arduino microcontroller, it will be controlled by Raspberry Pi 2.
 * It should have a smaller volume. In order to achieve that it will be used different heat source (heating foil) and no fan.
 
 ## Materials
@@ -27,9 +27,42 @@ Main differences:
 
 ## Design
 
-* For incubator box (casing) the following Magic Box [template](http://dragoslav.github.io/diy/projects/01-incubator/magic_box_template.mbt) is used.
-  It is a modified version of [Press-fit Box](http://magic-box.org/c/designs/). The main difference is that one side can be configured differently: number of steps (t_steps) and fitting (tpf). 
-  That allows 5 sides to strongly fit together and the remaining (top) side just to be used as a cover.
-  SVG files can be generated using the template and online Magic Box [tool](http://magic-box.org/tool/).
-  SVG laser cut file [example](http://dragoslav.github.io/diy/projects/01-incubator/magic_box_design.svg).
+In order find the most suitable design several hypotheses ere tested and these are some results.
+
+1. just a plain carton box
+2. 2cm think insulation (EPS) without gluing it (led to some warm air leakage)
+3. no fan - checking distribution of the warm air by 2 temperature sensors (bottom & top) 
+4. heating foil connected to 5V - using the same [power source](https://www.conrad.nl/nl/inbouwnetvoeding-5-vdc-5-a-25-w-tdk-lambda-ls-25-5-512731.html) as for Raspberry Pi
+
+Without cover:
+
+![carton-box-incubator]({{ site.url }}/projects/01-incubator/carton-box-incubator.jpg)
+
+[Wiring]({{ site.url }}/projects/01-incubator/incubator.fzz), note that temperature sensors are DS18S20 and heating element is the heating foil not a Peltier element.
+
+![wiring]({{ site.url }}/projects/01-incubator/wiring.png)
+
+Software to run the incubator can be found [here](https://github.com/dragoslav/incubator).
+
+![temperature controller]({{ site.url }}/projects/01-incubator/temperature-controller.png)
+
+Conclusion after this experimental design:
+
+1. Heat distribution is not uniform as it could be expected.
+
+![temperature profile]({{ site.url }}/projects/01-incubator/temperature-profile.png)
+
+2. Heating foil with 5V power supply is not good enough. Alone it can reach around 35°C but within container temperature stays below 30°C. 
+   Next try out should be with 12V - maximum voltage per specification.
+   
+3. 4cm thick EPS instead of 2cm.
+
+
+### Incubator casing
+
+For incubator box (casing) the following Magic Box [template]({{ site.url }}/projects/01-incubator/magic_box_template.mbt) is used.
+It is a modified version of [Press-fit Box](http://magic-box.org/c/designs/). The main difference is that one side can be configured differently: number of steps (t_steps) and fitting (tpf). 
+That allows 5 sides to strongly fit together and the remaining (top) side just to be used as a cover.
+SVG files can be generated using the template and online Magic Box [tool](http://magic-box.org/tool/).
+SVG laser cut file [example]({{ site.url }}/projects/01-incubator/magic_box_design.svg).
 
