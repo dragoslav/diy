@@ -23,7 +23,7 @@ Main differences:
 |Optoelectronic Reflective Coupler|[Conrad](https://www.conrad.nl/nl/opto-elektronische-reflectiekoppelaar-cny-70-vishay-cny-70-opto-elektronische-reflexkoppeling-bereik-03-mm-184241.html)|€ 2.13|
 |DAC (Digital-to-Analog Convertor)|[Conrad](https://www.conrad.nl/nl/linear-ic-mcp4725a0t-ech-sot-23-6-microchip-technology-651477.html)|€ 1.35|
 |DS2401 Silicon Serial Number|[Conrad](https://www.conrad.nl/nl/maxim-integrated-ds2401-lineaire-ic-soort-behuizing-to-92-uitvoering-1-wire-serie-nummer-170010.html)|€ 2.09|
-|Toggle switch|[Conrad](https://www.conrad.nl/nl/sci-r13-211d-02-wipschakelaar-250-vac-10-a-1x-aanuitaan-vergrendelend-1-stuks-448169.html)|€ 1.60|
+|Toggle switch (2 states on & 1 off)|[Conrad](https://www.conrad.nl/nl/sci-r13-211d-02-wipschakelaar-250-vac-10-a-1x-aanuitaan-vergrendelend-1-stuks-448169.html)|€ 1.60|
 
 ## Design
 
