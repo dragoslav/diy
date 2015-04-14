@@ -4,7 +4,7 @@ title: Microorganisms under UV light
 sidebar: 2
 label: microorganisms
 permalink: /microorganisms-under-uv-light/
-work-in-progress: true
+work-in-progress: false
 ---
 
 This is a simple experiment to test an [incubator]({{ site.url }}/projects/01-incubator) and get some knowledge about contamination tests and UV influence on microorganisms.
@@ -27,6 +27,15 @@ This is a simple experiment to test an [incubator]({{ site.url }}/projects/01-in
 
 ## Result
 
-...
+After incubating for 72 hours only visible change are fungi growing on the whole area.
+![result1]({{ site.url }}/projects/02-microorganisms/result1.jpg)
+
+What is interesting (hardly visible on the image), the most prominent fungi are under sunscreen quarter (upper left on the image), while the least amount on the quarter with plain cover.
+This difference may not be significant (i.e. related to the type of cover) and only conclusion is that UV light from the source used in the experiment can't prevent growth.
+Using paper bill can be shown that UV light passes through dish cover.
+
+It would be interesting to perform this experiment with specific (non-contamination) bacteria culture and see if there is a difference.
+
+
   
   
